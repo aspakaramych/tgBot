@@ -1,0 +1,8 @@
+﻿services:
+  tgbot:
+    image: tgbot
+    env_file:
+      - tgBot/.env
+    build:
+      context: .
+      dockerfile: tgBot/Dockerfile
